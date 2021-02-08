@@ -1,0 +1,91 @@
+package com.game.rockpaperscissors;
+
+import java.util.Random;
+
+public class game {
+	public String[] gamePlay() {
+		
+    /*VARIABLES DECLARATION INI*/
+		
+	//Players' Choices	
+	HandOptions firstPlayer = getRandomOption();
+	HandOptions secondPlayer = HandOptions.ROCK;
+	
+	//Variables needed for the logic process
+	int winner;
+	int playerOne;
+	int playerTwo;
+	
+	//Array to set info needed by JSP 
+	String[] result = new String[3]; 
+	
+	/*VARIABLES DECLARATION INI*/
+ 
+	// TODO: handle finally clause
+	try {
+	    
+		//Let's play
+		RoundGame round = new RoundGame();
+		winner = round.winner(firstPlayer);
+		playerOne = firstPlayer.getOption();
+		playerTwo = secondPlayer.getOption();
+		
+		//Player One Choice in result array
+		switch (playerOne) {
+			case 0:
+				result[0] = "Rock"; //Gamer 1 Rock
+				break;
+			
+			case 1:
+				result[0] = "Paper"; //Gamer 1 Paper
+				break;
+				
+			case 2:
+				result[0] = "Scissors"; //Gamer 1 Scissors
+				break;
+		}
+
+		//Player Two Choice in result array
+		switch (playerTwo) {
+	
+			case 0:
+				result[1] = "Rock"; //Gamer 2 Rock
+				break;
+			
+			case 1:
+				result[1] = "Paper"; //Gamer 2 Paper
+				break;
+				
+			case 2:
+				result[1] = "Scissors"; //Gamer 2 Scissors
+				break;
+		}
+		
+
+		//Winner result in result array
+		switch (winner) {
+			case -1:
+				result[2] = "Player Two Wins"; //Gamer 2 win
+				break;
+			
+			case 0:
+				result[2] = "Tie"; //Tie
+				break;
+				
+			case 1:
+				result[2] = "Player One Wins"; //Gamer 1 win
+				break;
+		}
+		
+	 }catch (Exception badGame) {
+		result[2] = "ERROR";
+		System.out.println("Something was wrong. Try to contact with the admin of this app A.K.A. Sergio");
+	 }
+	return result;
+}
+	public HandOptions getRandomOption() {
+		HandOptions[] values = HandOptions.values();
+		int length = values.length;
+		return values[new Random().nextInt(length)];
+	}
+}

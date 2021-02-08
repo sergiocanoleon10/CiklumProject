@@ -1,0 +1,10 @@
+package com.game.rockpaperscissors;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class AppController {
+	@RequestMapping("/gameRPS")
+	public String test() {
+	    return "gameRPS.jsp";
+	}
+}

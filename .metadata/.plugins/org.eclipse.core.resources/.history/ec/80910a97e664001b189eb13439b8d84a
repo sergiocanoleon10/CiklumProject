@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Rock-Paper-Scissors</title>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+			<!-- Header Logo INI-->
+			<div class="imgWrapper">
+				<div class="logoImg">
+					<img alt="Rock" src="img/rock.png">
+				</div>
+				<div class="logoImg">
+					<img alt="Paper" src="img/paper.png">
+				</div>
+				<div class="logoImg">
+					<img alt="Scissors" src="img/scissors.png">
+				</div>
+			</div>
+			<div class="imgWrapper">
+				<div class="logoImgDown">
+					<img alt="Hands" src="img/hands.png">
+				</div>
+			</div>
+			<!-- Header Logo END-->
+			<h1 class="rounds"><b><ins>Rounds Played</ins></b></h1>
+			<!-- Buttons INI-->
+			<div class="btnWrapper">
+				<button type="submit" class="buttonPlay">
+					<img src="img/playBtn.png"/>Play Round!
+				</button>
+			</div>
+			<div class="btnWrapper">
+				<button type="submit" class="buttonRestart">
+					<img src="img/restart.png"/>Restart Game!
+				</button>
+			</div>
+			<!-- Buttons END -->
+	</body>
+</html>

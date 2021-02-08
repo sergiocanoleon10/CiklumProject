@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>table-data</title>
+</head>
+<body>
+<table id="dataTable" class ="center">
+  				<tr>
+   				 <th>1st Player Choice</th>
+   				 <th>2nd Player Choice</th>
+  				 <th>And the winner is...</th>
+				</tr>
+				<tr id="round1">
+   				 <td></td>
+   				 <td></td>
+  				 <td>${winner}</td>
+				</tr>
+				<tr id="round2">
+   				 <td></td>
+   				 <td></td>
+  				 <td>${winner}</td>
+				</tr>
+				<tr id="round3">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round4">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round5">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round6">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round7">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round8">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round9">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+				<tr id="round10">
+   				 <td></td>
+   				 <td></td>
+  				 <td></td>
+				</tr>
+ 			 </table>
+</body>
+</html>

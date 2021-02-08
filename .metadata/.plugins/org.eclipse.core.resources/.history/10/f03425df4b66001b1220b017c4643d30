@@ -1,0 +1,38 @@
+package com.game.rockpaperscissors;
+
+import java.util.Random;
+
+public class game {
+	public void gamePlay() {
+	HandOptions firstPlayer = getRandomOption();
+	HandOptions secondPlayer = HandOptions.ROCK;
+	
+	int result;
+	
+	RoundGame round = new RoundGame();
+	result = round.winner(firstPlayer);
+	System.out.println(firstPlayer.getOption());
+	System.out.println(secondPlayer.getOption());
+	switch (result) {
+		
+		case -1:
+			result = 2; //Gamer 2 win
+			break;
+		
+		case 0:
+			result = 0; //Tie
+			break;
+			
+		case 1:
+			result = 1; //Gamer 1 win
+			break;
+	}
+	System.out.println(result);
+//	return result;
+}
+	public HandOptions getRandomOption() {
+		HandOptions[] values = HandOptions.values();
+		int length = values.length;
+		return values[new Random().nextInt(length)];
+	}
+}

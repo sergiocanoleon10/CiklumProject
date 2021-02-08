@@ -1,0 +1,36 @@
+package com.game.rockpaperscissors;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/myservlet")
+public class MyServlet extends HttpServlet{
+	
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		 	game gameRound = new game();
+		 	String button = request.getParameter("button");
+		 	String[] playRound= new String[3];
+	        
+		 	if ("btnPlay".equals(button)) {
+		 		playRound= gameRound.gamePlay();
+	        	
+	        } 
+	        request.setAttribute("player1", playRound[0]);
+	        request.setAttribute("player2", playRound[1]);
+	        request.setAttribute("winner", playRound[2]);
+	        request.getRequestDispatcher("/WEB-INF/gameRPS.jsp").forward(request, response);
+	    }
+}
+
+

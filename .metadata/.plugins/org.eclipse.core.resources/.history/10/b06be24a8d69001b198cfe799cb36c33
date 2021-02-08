@@ -1,0 +1,11 @@
+/**
+* Domain classes used to provide functionality in the Rock Paper Scissors Game
+* <p>
+* These classes contain the game functions needed
+* </p>
+*
+* @since 1.0
+* @author Sergio Cano
+* @version 1.0
+*/
+package com.game.rockpaperscissors;

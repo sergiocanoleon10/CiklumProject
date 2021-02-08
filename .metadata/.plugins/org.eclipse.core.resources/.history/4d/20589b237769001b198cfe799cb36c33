@@ -1,0 +1,13 @@
+package com.game.rockpaperscissors;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+
+public class rockPaperScissorsController {
+	@RequestMapping("/WEBINF/summaryResults.jsp")
+    public void home() {
+    }
+}
+

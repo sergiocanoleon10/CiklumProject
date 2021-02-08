@@ -1,0 +1,14 @@
+127.0.0.1 - - [01/Feb/2021:19:45:17 +0100] "GET / HTTP/1.1" 404 687
+127.0.0.1 - - [01/Feb/2021:19:45:37 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:46:29 +0100] "GET /gmRockPaperScissors HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:46:30 +0100] "GET /gmRockPaperScissors/ HTTP/1.1" 200 180
+127.0.0.1 - - [01/Feb/2021:19:54:19 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/ HTTP/1.1" 200 1090
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/img/rock.png HTTP/1.1" 200 43175
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/css/styles.css HTTP/1.1" 200 1153
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/img/paper.png HTTP/1.1" 200 17146
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/img/hands.png HTTP/1.1" 200 7066
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/img/scissors.png HTTP/1.1" 200 42528
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/img/restart.png HTTP/1.1" 200 1492
+0:0:0:0:0:0:0:1 - - [01/Feb/2021:19:54:22 +0100] "GET /gmRockPaperScissors/img/playBtn.png HTTP/1.1" 200 986
+127.0.0.1 - - [01/Feb/2021:22:55:10 +0100] "GET / HTTP/1.1" 404 687

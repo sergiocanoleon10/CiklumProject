@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sun Feb 07 23:55:09 CET 2021
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\MI\ PC\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\9.0.41\\tomcat-embed-jasper-9.0.41.jar=WEB-INF/lib/tomcat-embed-jasper-9.0.41.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\MI\ PC\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-el\\9.0.41\\tomcat-embed-el-9.0.41.jar=WEB-INF/lib/tomcat-embed-el-9.0.41.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\MI\ PC\\.m2\\repository\\org\\springframework\\spring-web\\5.3.3\\spring-web-5.3.3.jar=WEB-INF/lib/spring-web-5.3.3.jar

@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<%@ page import  = 'com.game.rockpaperscissors.game' %>
+<html>
+	<script>
+	window.onload = function() {
+		count();
+		}
+	function count(){
+   		let count = localStorage.getItem("count")==null?0:localStorage.getItem("count");
+    	let roundMsg = "Rounds Played: ";
+    	document.getElementById('counter').innerHTML = roundMsg + count;
+	}
+	function addOne(){
+		let count = localStorage.getItem("count")==null?0:localStorage.getItem("count");
+    	count=Number(count)+1;
+    	localStorage.setItem("count", count);
+	}
+	function deleteData(){
+    	localStorage.setItem("count", "0");
+	}
+	
+	function alert(){
+    	alert("hola);
+	}
+	</script>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Rock-Paper-Scissors</title>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+			<!-- Header Logo INI-->
+			<div class="imgWrapper">
+				<div class="logoImg">
+					<img alt="Rock" src="img/rock.png">
+				</div>
+				<div class="logoImg">
+					<img alt="Paper" src="img/paper.png">
+				</div>
+				<div class="logoImg">
+					<img alt="Scissors" src="img/scissors.png">
+				</div>
+			</div>
+			<div class="logoImgDown">
+				<img alt="Hands" src="img/hands.png">
+				<p  id="counter">Rounds Played: 0</p>
+			</div>
+			<!-- Header Logo END-->
+			<!-- Buttons INI-->
+			<form action="${pageContext.request.contextPath}/myservlet" method="post">
+			<div class="btnWrapper">
+				<button type="submit" name="button" value="btnPlay" class="buttonPlay" onclick="addOne();">
+					<img src="img/playBtn.png"/>Play Round!
+				</button>
+			</div>
+			<div>
+			<table id="dataTable" class ="center">
+  				<tr>
+   				 <th>1st Player Choice</th>
+   				 <th>2nd Player Choice</th>
+  				 <th>And the winner is...</th>
+				</tr>
+ 			 </table>
+ 			 </div>
+			<div class="btnWrapper">
+				<button type="submit" name="button" value="btnReset" class="buttonRestart" onclick="deleteData();">
+					<img src="img/restart.png"/>Restart Game!
+				</button>
+			</div>
+			</form>
+			<!-- Buttons END -->
+	</body>
+</html>

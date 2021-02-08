@@ -1,0 +1,5 @@
+package com.game.rockpaperscissors.controller;
+
+public class GameController {
+
+}
